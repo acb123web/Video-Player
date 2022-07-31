@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Subscribe to My Youtube Channel "Coder ACB"-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple-Video-Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+   <video src="./video/Pip _ A Short Animated Film by Southeastern Guide Dogs.mp4" 
+   poster="./img/pipp.png"
+    id="video"></video>
+    <div class="controls">
+        <button class="btn" id="play"><i class="fa-solid fa-play"></i></button>
+        <button class="btn" id="stop"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+        <input type="range" class="peogressbar" id="progressbar" min="0" max="100" step="0.1" value="0"/>
+        <span class="timestamp" id="timestamp">00:00</span>
+        <span class="timestamp" id="timestamp">/</span>
+        <span class="timestamp" id="timestamp1">00:00</span>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
